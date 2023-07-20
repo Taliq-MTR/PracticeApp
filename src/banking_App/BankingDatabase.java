@@ -5,7 +5,7 @@ import banking_App.Client_Details;
 public class BankingDatabase {
 	
 	
-	public static void main(String[] args) {
+	public static void get_customer_data (String[] args) {
 	
 		
 		Client_Details c1= new Client_Details("Tushar", 3546);
@@ -28,7 +28,7 @@ public class BankingDatabase {
 	   nameList.add(c7);
 	   System.out.println(nameList.toString());
 	   for(int i=0; i<nameList.size(); i++) {
-		   System.out.println(nameList.get(i).getName() +  "  "+ nameList.get(i).getId());
+		   System.out.println(nameList.get(i).getName() +  " "+ nameList.get(i).getId());
 		   
 
 	   }
