@@ -13,10 +13,10 @@ public class BankingAccount {
 		this.customerId= customerId;
 		
 	}
- public static void main () {
-	
-	Scanner sc= new Scanner(System.in);
- }
+// public static void main () {
+//	
+//	Scanner sc= new Scanner(System.in);
+// }
 	
 	void deposit(double amount) {
 		if(amount!=0) {
@@ -26,5 +26,22 @@ public class BankingAccount {
 		
 	}
 	
-
+	void withdraw (double amnt) {
+		if (amnt>bal) {
+			System.out.println("Insufficient balance");
+			return;
+		}
+		bal-=amnt;
+		prevTrans = -amnt;
+		
+	}
+	 double getbalnace ( ) {
+		return this.bal;
+		
+	}
+    double getPrevTrans() {
+    	return this.prevTrans;
+    }
+    
+    
 }
