@@ -43,5 +43,7 @@ public class BankingAccount {
     	return this.prevTrans;
     }
     
-    
+    void menu() {
+    	
+    }
 }
