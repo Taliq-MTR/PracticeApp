@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import banking_App.Client_Details;
 public class BankingDatabase {
 	
+	static ArrayList <Client_Details> nameList;
 	
 	public static void get_customer_data (String[] args) {
 	
@@ -17,7 +18,7 @@ public class BankingDatabase {
 		Client_Details c7= new Client_Details("Tal", 7481);
 
 //	   Creating an array list of Client_Details type
-	   ArrayList <Client_Details> nameList= new ArrayList<>();
+	   nameList= new ArrayList<>();
 
 	   nameList.add(c1);
 	   nameList.add(c2);
@@ -33,5 +34,7 @@ public class BankingDatabase {
 
 	   }
 	}
-
+ boolean check_id (id) {
+	 
+ }
 }
