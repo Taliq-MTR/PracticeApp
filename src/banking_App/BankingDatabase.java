@@ -6,7 +6,7 @@ public class BankingDatabase {
 	
 	static ArrayList <Client_Details> nameList;
 	
-	public static void get_customer_data (String[] args) {
+	public static void get_customer_data () {
 	
 		
 		Client_Details c1= new Client_Details("Tushar", 3546);
@@ -28,13 +28,14 @@ public class BankingDatabase {
 	   nameList.add(c6);
 	   nameList.add(c7);
 	   System.out.println(nameList.toString());
-	   for(int i=0; i<nameList.size(); i++) {
-		   System.out.println(nameList.get(i).getName() +  " "+ nameList.get(i).getId());
-		   
-
-	   }
+//	   for(int i=0; i<nameList.size(); i++) {
+//		   System.out.println(nameList.get(i).getName() +  " "+ nameList.get(i).getId());
+//		   
+//
+//	   }
 	}
- boolean check_id (id) {
-	 
- }
 }
+// boolean check_id (id) {
+//	 
+// }
+//}
