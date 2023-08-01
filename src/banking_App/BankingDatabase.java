@@ -27,7 +27,7 @@ public class BankingDatabase {
 	   nameList.add(c5);
 	   nameList.add(c6);
 	   nameList.add(c7);
-	   System.out.println(nameList.toString());
+//	   System.out.println(nameList.toString());
 //	   for(int i=0; i<nameList.size(); i++) {
 //		   System.out.println(nameList.get(i).getName() +  " "+ nameList.get(i).getId());
 //		   
