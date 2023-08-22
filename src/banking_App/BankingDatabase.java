@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import banking_App.Client_Details;
 public class BankingDatabase {
 	
-	static ArrayList <Client_Details> nameList;
+	 static ArrayList <Client_Details> nameList;
 	
-	public static void get_customer_data () {
 	
-		
+	
+	public BankingDatabase() {
+		super();
 		Client_Details c1= new Client_Details("Tushar", 3546);
 		Client_Details c2= new Client_Details("Nikhil", 1546);
 		Client_Details c3= new Client_Details("MTR", 13546);
@@ -27,13 +28,37 @@ public class BankingDatabase {
 	   nameList.add(c5);
 	   nameList.add(c6);
 	   nameList.add(c7);
-//	   System.out.println(nameList.toString());
-//	   for(int i=0; i<nameList.size(); i++) {
-//		   System.out.println(nameList.get(i).getName() +  " "+ nameList.get(i).getId());
-//		   
-//
-//	   }
+		// TODO Auto-generated constructor stub
 	}
+
+
+
+	public static ArrayList<Client_Details> getNameList() {
+		return nameList;
+	}
+
+	public static void setNameList(ArrayList<Client_Details> nameList) {
+		
+		if(nameList == null) {
+			System.out.println("Database Cannot be null");
+			return;
+		}
+		BankingDatabase.nameList = nameList;
+	}
+
+
+
+//	public static void get_customer_data () {
+//	
+//		
+//		
+////	   System.out.println(nameList.toString());
+////	   for(int i=0; i<nameList.size(); i++) {
+////		   System.out.println(nameList.get(i).getName() +  " "+ nameList.get(i).getId());
+////		   
+////
+////	   }
+//	}
 }
 // boolean check_id (id) {
 //	 

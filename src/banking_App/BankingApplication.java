@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BankingApplication {
 
-	public static void main(String[] args) {
+	public static void fetching_details () {
 		Scanner sca = new Scanner(System.in);
 		System.out.println("Please Enter Customer name");
 		String getName = sca.nextLine();
@@ -12,8 +12,8 @@ public class BankingApplication {
 		int getId = sca.nextInt();
 		BankingDatabase data = new BankingDatabase();
 
-		data.get_customer_data();
-		
+		//data.get_customer_data();
+	//	data.nameList = null;
 		boolean isUserFound = false;
 		for (int i = 0; i < data.nameList.size(); i++) {
 			if (getName.equals(data.nameList.get(i).getName())  && getId== data.nameList.get(i).getId()) {
